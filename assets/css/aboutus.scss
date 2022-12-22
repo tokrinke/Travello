@@ -1,0 +1,68 @@
+.container{
+    .aboutUsSection{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 275px;
+        .twoImages{
+            width: 667px;
+            height: 546px;
+            .waterfall{
+                align-self: flex-start;
+                z-index: 1;
+                padding: 8px;
+                border-left: solid 2px #E3DEC1;
+                border-bottom: solid 2px #E3DEC1;
+                border-right: solid 2px #E3DEC1;
+                animation-name: slideIn;
+                animation-duration: 2s;
+            }
+            .mountains{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                z-index: 2;
+                animation-name: slideIn;
+                animation-duration: 1.5s;
+            }
+        }
+        .aboutUsArticle{
+            position: relative;
+            align-self: center;
+            margin-left: 45px;
+            max-width: 486px;
+            max-height: 385px;
+            z-index: 2;
+            p{
+                font-family: workSansReg;
+                font-size: 18px;
+                margin-bottom: 20px;
+                color: #333333;
+            }
+            h2{
+                font-family: playfairMed;
+                font-size: 45px;
+                margin-bottom: 20px;
+                margin-top: 10px; 
+                color: #121212;
+            }
+            .aboutUs{
+                font-family: playfairMed;
+                font-size: 18px;
+                color: #2094E6;
+            }
+            .defaultButton:hover{
+                color: #2094E6;
+                background-color: #FFFFFF;
+                border: solid 1px #2094E6;
+                transition: 0.6s;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@keyframes slideIn {
+    from { transform: translate(-1500px); }
+    to {transform: translate(0px);}
+}
